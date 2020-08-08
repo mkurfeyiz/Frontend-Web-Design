@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <style>
+        h1 {
+            font-size: 60px;
+            font-weight: 800;
+            letter-spacing: -2px;
+            padding-left: -10px;
+        }
+        p {
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: start;
+            letter-spacing: -1px;
+            word-break: keep-all;
+        }
+        h2 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -1px;
+            line-height: 0.3;
+            text-align: left;
+        }
+        ::placeholder{
+            font-weight: 800;
+            color: black;
+        }
+        #sendMessage{
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            background-color: gold;
+        }
+        #sendMessage:hover{
+            background-color: rgb(235, 216, 113);
+        }
+        #info{
+            text-align: center;
+            line-height: 0.1;
+            letter-spacing: -1px;
+            font-weight: 700;
+            font-size: 12px;
+        }
+        i{
+            padding-left: 170px;
+            padding-bottom: 10px;
+        }
+        #logo{
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+        a{
+            width: 50px;
+            height: 100px;
+        }
+    </style>
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron" style="background-color: white;">
+            <div class="row">
+                <div class="col" >
+                    <h1>CONTACT US.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="row ">
+            <div class="col">
+                <form id="form" novalidate>
+                    <h2 style="margin-bottom: 50px;">Send Us Message.</h2>
+                    <!--Name-->
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                        <div></div>
+                    </div>
+                    <!--- Email-->
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        <div></div>
+                    </div>
+                    <!--- Message -->
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" id="message" placeholder="Message" rows="5" cols="10"></textarea>
+                        <div></div>
+                    </div>
+                    <!-- Submit Button-->
+                    <button id="sendMessage" type="submit" class="btn btn-lg" ">SEND MESSAGE</button>
+                </form>
+            </div>
+
+            <div class="col" style="background-color: rgb(221,220,220);">
+
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="margin-top: 40px; margin-bottom: 30px;">
+            <div class="col-md-4">
+                <i class="fas fa-map-marker-alt"></i>
+                <p id="info">1211 Awesome Avenue</p>
+                <p id="info">NY USD</p>
+
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-mobile-alt"></i>
+                <p id="info">+00 123-456-78</p>
+                <p id="info">+00 123-456-78</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-envelope"></i>
+                <p id="info">mint@mintmail.com</p>
+            </div>
+        </div>
+
+        <div class="row row-cols-3 justify-content-center" style="margin-bottom: 50px; margin-top: 40px;">
+            <div class="col-1">
+                <a href="#">
+                    <i id="logo" class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="col-1">
+                <a href="#">
+                    <i id="logo" class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="col-1">
+                <a href="#">
+                    <i id="logo" class="fas fa-basketball-ball"></i>
+                </a>
+            </div>
+        </div>
+        <!--Alt kisim-->
+        <div class="jumbotron" style="background-color: rgba(0, 0, 0, 0.788); height: 125px; ">
+            <!--Burada logo ve copyrights yazisi olacak-->
+            <div class="row">
+                <!--Buraya logo gelecek-->
+                <div class="col-1" style="margin-top: -20px;">
+                    <i class="fas fa-anchor" style="color: white; padding-left:0px;  font-size: xxx-large;"></i>
+                </div>
+                <!--copyrights yazisi-->
+                <div class="col" style="margin-left: 0px; margin-top: -20px;">   
+                    <p style="color: white; font-size: 10px; font-weight: 500;">2020 - Mint.All Rights Reserved</p>
+                </div>
+                <!--Back to top linki-->
+                <div class="col" style="margin-left: 702px; margin-top: -20px;">
+                    <a href="#" style="color:white; font-size: 10px; font-weight: 500;">BACK TO TOP ^</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+        integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+        crossorigin="anonymous"></script>
+</body>
+</html>
